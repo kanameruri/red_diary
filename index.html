@@ -25,6 +25,48 @@ body{min-height:100vh;background:#ffffff;color:var(--ink);font-family:"Noto Seri
 .tap-zone{position:absolute;top:0;bottom:0;width:18%;z-index:999;cursor:pointer}.tap-zone.left{left:0}.tap-zone.right{right:0}.controls{width:min(760px,92vw);margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.controls button{appearance:none;border:0;background:transparent;color:#5f554d;font:inherit;font-size:13px;letter-spacing:.08em;padding:9px 12px;cursor:pointer;border-radius:4px}.controls button:hover:not(:disabled){background:rgba(55,53,47,.07)}.controls button:disabled{opacity:.25;cursor:default}.counter{color:#82776f;font-size:12px;letter-spacing:.12em;user-select:none}.hint{margin-top:8px;color:#968b82;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:11px;letter-spacing:.06em}
 @media(max-width:640px){.stage{padding:18px 10px;justify-content:flex-start}.book-wrap{width:96vw;height:78vh;min-height:520px}.page-inner{padding:44px 28px 60px}.cover-inner{padding:28px}.cover-frame{width:88%;padding:44px 24px}.tap-zone{width:22%}}
 @media(prefers-reduced-motion:reduce){.page{transition:transform .2s linear}}
+/* ===== Notion Embed 融合版 ===== */
+
+html,
+body {
+  margin:0 !important;
+  padding:0 !important;
+  background:#ffffff !important;
+  overflow:hidden;
+  scrollbar-width:none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.page-inner::-webkit-scrollbar {
+  display:none;
+  width:0;
+  height:0;
+}
+
+.stage{
+  min-height:0 !important;
+  padding:8px 0 !important;
+  justify-content:flex-start !important;
+}
+
+.page-inner{
+  overflow:hidden;
+}
+
+.controls{
+  display:none !important;
+}
+
+.hint{
+  display:none !important;
+}
+
+.page{
+  box-shadow:
+    0 6px 20px rgba(45,31,20,.10),
+    inset 10px 0 18px rgba(85,64,44,.035) !important;
+}
 </style>
 </head>
 <body>
